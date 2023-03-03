@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/TRIPLE-ADE/Easybank-landing-page-solution)
+- Live Site URL: [Add live site URL here](https://easybanking-page.netlify.app/)
 
 ## My process
 
@@ -121,6 +121,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [TripleA](https://easybanking-page.netlify.app/)
 - Frontend Mentor - [@TRIPLE-ADE](https://www.frontendmentor.io/profile/TRIPLE-ADE)
 - Twitter - [@Triple123A](https://www.twitter.com/Triple123A)

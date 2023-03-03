@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply py-3 text-sm text-primary-White bg-gradient-to-r from-primary-Lime-Green via-primary-Lime-Green to-primary-Bright-cyan rounded-3xl px-7;
+}
+.flex-container{
+    @apply flex flex-col items-center gap-2 text-center sm:flex-row-reverse sm:items-start;
+}
+.bg-image{
+    @apply grid grid-cols-1;
+}
+.cards{
+    @apply grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5;
+}
+.card-content{
+    @apply flex flex-col gap-5 overflow-hidden rounded-md sm:items-start;
+}
+.card-header{
+    @apply text-2xl;
+}
+.hide-nav{
+    @apply transform -translate-y-96;
+}
+@layer base{
+    footer{
+        @apply gap-10 sm:grid sm:grid-cols-4;
+    }
+}

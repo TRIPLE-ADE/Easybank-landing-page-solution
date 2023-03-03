@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Easybank landing page</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a{
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="font-body">
+
+  <header class="flex justify-between p-5 md:px-24 sm:items-center">
+    <div class="w-5/12">
+      <a href="#"><img src="./src/images/logo.svg" alt="Logo"></a>
+    </div>
+    <nav class="absolute left-0 right-0 z-40 w-5/6 m-auto text-center transition-all delay-200 bg-white rounded-md hide-nav sm:relative top-20 sm:flex sm:top-0 sm:items-center sm:justify-between sm:-translate-y-0 sm:transition-none">
+      <ul class="flex flex-col gap-3 py-4 sm:py-0 sm:flex-row sm:gap-5">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+      <div class="hidden sm:block">
+        <button class="btn">Request Invite</button>
+      </div>
+    </nav>
+    
+    <div>
+      <div class="hamburger sm:hidden">
+        <img src="./src/images/icon-hamburger.svg" alt="" class="hover:cursor-pointer" >
+      </div>
+      <div class="hidden close sm:hidden">
+        <img src="./src/images/icon-close.svg" alt="" class="hover:cursor-pointer">
+      </div>
+   </div>
+  </header>
+
+
+  <main class="overflow-hidden">
+    <section class="pb-20 m-auto flex-container bg-primary-Very-Light-Gray sm:text-start sm:pb-0 md:pb-20" >
+      <section class="bg-image">
+        <img src="./src/images/bg-intro-mobile.svg" alt="" class="-mt-20 -mr-40 w-[100%] row-span-full col-span-full sm:hidden">
+        <img src="./src/images/bg-intro-desktop.svg" alt="" class="hidden sm:-mt-16 sm:translate-x-4 sm:max-w-sm md:translate-x-5 sm:transform row-span-full col-span-full sm:block md:max-w-3xl md:-mt-40">
+        <img src="./src/images/image-mockups.png" alt="" id="mockup" class="w-[90%] -mt-[7.5rem] ml-4 row-span-full col-span-full sm:translate-x-16  md:translate-x-28 sm:transform">
+      </section>
+      <section class="pl-6 md:pt-36 md:pl-24 sm:py-14" >
+        <h1 class="text-4xl sm:text-5xl md:text-6xl px-7 sm:p-0">Next generation digital banking</h1>
+        <p class="text-sm p-7 text-primary-Grayish-Blue sm:px-0">Take your financial life online. Your Easybank account will be a one-stop-shop
+          for spending, saving, budgeting, investing, and much more.</p>
+        <button class="btn">Request Invite</button>
+      </section>
+    </section>
+
+    <section class="px-6 py-20 text-center bg-primary-Light-Grayish-Blue md:px-24 sm:text-start">
+      <h2 class="text-4xl">Why choose Easybank?</h2>
+
+      <p class="py-5 text-sm sm:w-3/5 text-primary-Grayish-Blue">We leverage Open Banking to turn your bank account into your financial hub. Control
+        your finances like never before.
+      </p>
+    
+      <div class="cards">
+        <div class="items-center pt-10 card-content">
+          <img src="./src/images/icon-online.svg" alt="">
+          <p class="card-header">Online Banking</p>
+          <p class="text-sm text-primary-Grayish-Blue">Our modern web and mobile applications allow you to keep track of your finances
+            wherever you are in the world.
+          </p>
+        </div>
+        <div class="items-center pt-10 card-content">
+          <img src="./src/images/icon-budgeting.svg" alt="">
+          <p class="card-header">Simple Budgeting</p>
+          <p class="text-sm text-primary-Grayish-Blue">See exactly where your money goes each month. Receive notifications when you’re
+            close to hitting your limits.
+          </p>
+        </div>
+    
+        <div class="items-center pt-10 card-content">
+          <img src="./src/images/icon-onboarding.svg" alt="">
+          <p class="card-header">Fast Onboarding</p>
+          <p class="text-sm text-primary-Grayish-Blue">We don’t do branches. Open your account in minutes online and start taking control
+            of your finances right away.
+          </p>
+        </div>
+        <div class="items-center pt-10 card-content ">
+          <img src="./src/images/icon-api.svg" alt="">
+          <p class="card-header">Open API</p>
+           <p class="text-sm text-primary-Grayish-Blue">Manage your savings, investments, pension, and much more from one account. Tracking
+            your money has never been easier.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-20 bg-primary-Very-Light-Gray md:px-24">
+      <h2 class="text-3xl text-center mb-7">Latest Articles</h2>
+
+      <div class="cards">
+        <div class="mb-6 card-content bg-primary-White">
+          <img src="./src/images/image-currency.jpg" alt="">
+          <div class="py-10 px-7">
+            <p class="text-xs text-primary-Grayish-Blue ">By Claire Robinson</p>
+            <p class="py-3 text-lg">Receive money in any currency with no fees</p>
+            <p class="text-sm text-primary-Grayish-Blue">The world is getting smaller and we’re becoming more mobile. So why should you be
+              forced to only receive money in a single …
+            </p>
+          </div>
+        </div>
+  
+        <div class="mb-6 card-content bg-primary-White">
+          <img src="./src/images/image-currency.jpg" alt="">
+          <div class="py-10 px-7">
+            <p class="text-xs text-primary-Grayish-Blue">By Wilson Hutton</p>
+            <p class="py-3 text-lg">Treat yourself without worrying about money</p>
+            <p class="text-sm text-primary-Grayish-Blue">Our simple budgeting feature allows you to separate out your spending and set
+              realistic limits each month. That means you …
+            </p>
+          </div>
+        </div>
+  
+        <div class="mb-6 card-content bg-primary-White">
+          <img src="./src/images/image-currency.jpg" alt="">
+          <div class="py-10 px-7">
+            <p class="text-xs text-primary-Grayish-Blue">By Wilson Hutton</p>
+            <p class="py-3 text-lg">Take your Easybank card wherever you go</p>
+            <p class="text-sm text-primary-Grayish-Blue">
+              We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+              while you’re abroad. We’ll even show you …
+            </p>
+          </div>
+        </div>
+        <div class="mb-6 card-content bg-primary-White">
+          <img src="./src/images/image-currency.jpg" alt="">
+          <div class="py-10 px-7 ">
+            <p class="text-xs text-primary-Grayish-Blue">By Claire Robinson</p>
+            <p class="py-3 text-lg">Our invite-only Beta accounts are now live!</p>
+            <p class="text-sm text-primary-Grayish-Blue">After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+              It’s easy to request an invite through the site ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+  <footer class="py-10 text-center bg-primary-Dark-Blue sm:grid md:px-24 sm:text-start">
+    <div>
+      <div class="flex justify-center">
+        <img src="./src/images/white-logo.svg" alt="logo" class="fill-primary-White">
+      </div>
+      <div class="flex justify-center gap-4 pt-6">
+        <img src="./src/images/icon-facebook.svg" alt="">
+        <img src="./src/images/icon-youtube.svg" alt="">
+        <img src="./src/images/icon-twitter.svg" alt="">
+        <img src="./src/images/icon-pinterest.svg" alt="">
+        <img src="./src/images/icon-instagram.svg" alt="">
+      </div>
+    </div>
+    <div  class="py-5 text-sm leading-7 text-primary-White sm:flex sm:py-0">
+      <ul class="sm:px-10">
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+      <ul>
+        <li>Careers</li>
+        <li>Support</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+    <div  class="col-span-2 text-center">
+      <button class="btn">Request Invite</button>
+      <p class="pt-5 text-primary-Grayish-Blue">© Easybank. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./dist/app.js"></script>
+</body>
+
+</html>
